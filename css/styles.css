@@ -38,13 +38,18 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 2rem;
     font-family: "FantasqueSansRegular";
     color: #202029;
-    background-image: url('../img/bgtile.png');
+    background-image: url('../img/bgtile1.png');
     background-repeat: repeat;
     background-size: 36px 36px;
+}
+
+p {
+    line-height: 1.3;
+    margin-bottom: 1.6rem;
 }
 
 em {
@@ -58,11 +63,22 @@ strong {
 h1 {
     font-family: "MonofurRegular";
     font-size: 2.8rem;
-    margin-bottom: 1.6rem;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(31, 128, 137);
+    color: #FFFDDD;
 }
 
 h1 em {
     font-family: "MonofurItalic";
+}
+
+h2 {
+    font-family: "FantasqueSansBold";
+    margin-bottom: 1.5rem;
+    color: #FFFDDD;
+    background-color: rgb(31, 128, 137);
+    padding: 0.8rem;
 }
 
 a, a:any-link {
@@ -71,24 +87,35 @@ a, a:any-link {
     text-decoration: underline;
 }
 
+hr {
+    border-style: dashed;
+    border-width: 0.15rem;
+    border-color: rgb(181, 181, 213);
+    margin: 2.2rem 0;
+}
+
 .header {
     display: flex;
     width: 100%;
-    height: 15rem;
+    height: 16rem;
     max-width: 120rem;
     margin: 0 auto 2rem auto;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.9);
-    border: 0.3rem dotted rgba(147, 146, 195, 1);
+    border: 0.4rem dotted rgb(83, 140, 143);
+}
+
+.header div{
+    flex: 1;
 }
 
 .header p {
-    margin-bottom: 0.4rem;
+    line-height: 1;
+    margin-bottom: 0.3rem;
 }
 
 #pfp {
     height: 100%;
-    border-radius: 0.5rem;
     margin-right: 2rem;
 }
 
@@ -96,16 +123,16 @@ a, a:any-link {
     width: 100%;
     max-width: 120rem;
     display: grid;
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 21rem 1fr;
     grid-gap: 2rem;
     margin: 0 auto;
-    
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.9);
-    border: 0.3rem dotted rgba(147, 146, 195, 1);
-    padding: 2rem;
+    border: 0.4rem dotted rgb(83, 140, 143);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 nav li {
@@ -115,20 +142,80 @@ nav li {
     margin-bottom: 0.2rem;
 }
 
-nav li:hover {
+a li:hover {
     background-color: rgba(163, 213, 219, 0.3);
     transition: background-color 0.3s ease;
 }
 
 .icon {
     display: inline-block;
-    height: 1.8rem;
+    vertical-align: middle;
+    height: 2.2rem;
     margin-right: 0.7rem;
 }
 
 .content {
     background-color: rgba(255, 255, 255, 0.9);
-    border: 0.3rem dotted rgba(147, 146, 195, 1);
+    border: 0.4rem dotted rgb(83, 140, 143);
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
+.bib-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.2rem;
+}
+
+.bib-title {
+    font-family: "FantasqueSansBold";
+    color: rgb(31, 128, 137);
+    margin-bottom: 0.4rem;
+}
+
+.bib-authors {
+    font-family: "FantasqueSansItalic";
+    font-size: 1.8rem;
+    color: rgb(116, 116, 116);
+    margin-bottom: 0.4rem;
+}
+
+.bib-source {
+    margin-bottom: 1rem;
+}
+
+.bib-links {
+    font-family: "FantasqueSansRegular";
+    color: rgb(83, 140, 143);
+}
+
+#sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+#blinkies img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#catch {
+    font-family: "FantasqueSansItalic";
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+#contacts li {
+    padding: 0.7rem;
+}
+
+.text-center {
+    text-align: center;
+}
