@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "FantasqueSansRegular";
+    src: url('../fonts/FantasqueSansMNerdFont-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FantasqueSansBold";
+    src: url('../fonts/FantasqueSansMNerdFont-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FantasqueSansItalic";
+    src: url('../fonts/FantasqueSansMNerdFont-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FantasqueSansBoldItalic";
+    src: url('../fonts/FantasqueSansMNerdFont-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MonofurRegular";
+    src: url('../fonts/MonofurNerdFont-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MonofurBold";
+    src: url('../fonts/MonofurNerdFont-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MonofurItalic";
+    src: url('../fonts/MonofurNerdFont-Italic.ttf') format('truetype');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 2rem;
+    color: #202029;
+    background-image: url('../img/bgtile.png');
+    background-repeat: repeat;
+    background-size: 36px 36px;
+}
+
+p {
+    font-family: "FantasqueSansRegular";
+}
+
+em {
+    font-family: "FantasqueSansItalic";
+}
+
+strong {
+    font-family: "FantasqueSansBold";
+}
+
+h1 {
+    font-family: "MonofurRegular";
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+h1 em {
+    font-family: "MonofurItalic";
+}
+
+
+.page-wrapper {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.3rem dotted rgba(147, 146, 195, 0.5);
+}
