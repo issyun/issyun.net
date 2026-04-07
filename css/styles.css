@@ -40,14 +40,11 @@ html {
 body {
     font-size: 1.6rem;
     padding: 2rem;
+    font-family: "FantasqueSansRegular";
     color: #202029;
     background-image: url('../img/bgtile.png');
     background-repeat: repeat;
     background-size: 36px 36px;
-}
-
-p {
-    font-family: "FantasqueSansRegular";
 }
 
 em {
@@ -61,19 +58,77 @@ strong {
 h1 {
     font-family: "MonofurRegular";
     font-size: 2.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 h1 em {
     font-family: "MonofurItalic";
 }
 
+a, a:any-link {
+    font-family: "FantasqueSansBold";
+    color:  #3d645d;
+    text-decoration: underline;
+}
 
-.page-wrapper {
+.header {
+    display: flex;
     width: 100%;
+    height: 15rem;
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.9);
-    border: 0.3rem dotted rgba(147, 146, 195, 0.5);
+    border: 0.3rem dotted rgba(147, 146, 195, 1);
 }
+
+.header p {
+    margin-bottom: 0.4rem;
+}
+
+#pfp {
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.3rem dotted rgba(147, 146, 195, 1);
+    padding: 2rem;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+nav li:hover {
+    background-color: rgba(163, 213, 219, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.icon {
+    display: inline-block;
+    height: 1.8rem;
+    margin-right: 0.7rem;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.3rem dotted rgba(147, 146, 195, 1);
+    padding: 2rem;
+}
+
