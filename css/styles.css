@@ -238,17 +238,156 @@ a li:hover {
     display: block;
 }
 
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 button {
     width: 100%;
     height: 100%;
     padding: 2rem;
     font-family: "FantasqueSansRegular";
     font-size: 1.8rem;
+    background-color: rgb(220, 230, 229);
+    border: 0.4rem groove rgb(125, 176, 179);
+    border-radius: 0.3rem;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(241, 248, 247);
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: rgb(170, 191, 189);
 }
 
 #footer {
     display: flex;
     justify-content: space-between;
     color: rgb(116, 116, 116);
+}
+
+@media screen and (max-width: 666px) {
+    body {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        height: auto;
+        padding: 1rem;
+        border-width: 0.3rem;
+    }
+
+    nav {
+        padding: 1rem;
+        border-width: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav li {
+        background-color: rgb(220, 230, 229);
+        border: 0.4rem groove rgb(125, 176, 179);
+        border-radius: 0.3rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    #pfp {
+        width: 100%;
+        object-fit: cover;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    #sidebar {
+        position: static;
+        top: auto;
+    }
+
+    #blinkies {
+        display: block;
+        overflow: hidden;
+        gap: 1rem;
+        height: 2.7rem;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    #blinkies div {
+        width: calc((20rem + 1rem) * 6);
+        height: 2.7rem;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee 7s linear infinite;
+    }
+
+    #blinkies div:nth-child(2) {
+        animation: marquee2 7s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% { left: 0; }
+        100% { left: calc((-20rem - 0.8rem) * 6); }
+    }
+
+    @keyframes marquee2 {
+        0% { left: calc((20rem + 0.8rem) * 6); }
+        100% { left: 0; }
+    }
+
+    #blinkies img {
+        display: inline-block;
+        width: 20rem;
+        margin-bottom: 0;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .main-wrapper {
+        display: block;
+    }
+
+    .bib-authors {
+        font-size: 1.4rem;
+    }
+
+    .links-wrapper {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .content {
+        border-width: 0.3rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    body {
+        font-size: 1.4rem;
+    }
 }

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body id="top">
         <div class="header">
             <img src="img/pfp.jpg" alt="Profile Picture" id="pfp">
             <div>
@@ -22,10 +22,10 @@
                 <div id="sidebar">
                     <nav>
                         <ul>
-                            <a href="#about">
+                            <a href="#top">
                                 <li><img class="icon" src="img/icons/home.png"/>Home</li>
                             </a>
-                            <a href="#projects">
+                            <a href="#publications">
                                 <li><img class="icon" src="img/icons/document.png"/>Publications</li>
                             </a>
                             <a href="#music">
@@ -37,12 +37,22 @@
                         </ul>
                     </nav>
                     <div id="blinkies">
-                        <img src="img/blinkies/science.gif" />
-                        <img src="img/blinkies/woh.gif" />
-                        <img src="img/blinkies/kirbywalk.gif" />
-                        <img src="img/blinkies/miku.gif" />
-                        <img src="img/blinkies/pokemon.gif" />
-                        <img src="img/blinkies/wikipedia.gif" />
+                        <div>
+                            <img src="img/blinkies/science.gif" />
+                            <img src="img/blinkies/woh.gif" />
+                            <img src="img/blinkies/kirbywalk.gif" />
+                            <img src="img/blinkies/miku.gif" />
+                            <img src="img/blinkies/pokemon.gif" />
+                            <img src="img/blinkies/wikipedia.gif" />
+                        </div>
+                        <div class="mobile-only">
+                            <img src="img/blinkies/science.gif" />
+                            <img src="img/blinkies/woh.gif" />
+                            <img src="img/blinkies/kirbywalk.gif" />
+                            <img src="img/blinkies/miku.gif" />
+                            <img src="img/blinkies/pokemon.gif" />
+                            <img src="img/blinkies/wikipedia.gif" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,8 +60,7 @@
                 <div class="content">
                     <section>
                         <h2 id="catch">
-                            <img class="icon" src="img/icons/bulb.png"/>
-                            Exploring what emerging technologies can do for music creation and analysis.
+                            <img class="icon" src="img/icons/bulb.png"/>Exploring what emerging technologies can do for music creation and analysis.
                         </h2>
                         <p>AI can do so much more than generate entire tracks from prompts. The field of Music Information Retrieval, embracing recent advancements in ML tech, has shown new possibilities for music analysis and education, documentation and preservation, co-creation, and interactive music experiences. As a lifelong musician, I find this new wave of findings incredibly exciting.</p>
                         <p>My current research focuses on Automatic Music Transcription (AMT), pattern recognition in music audio, and modal translation between the many representations of music.</p>
@@ -76,7 +85,7 @@
                     </section>
                 </div>
 
-                <div class="content">
+                <div class="content" id="publications">
                     <h2>Selected Publications</h2>
                     <div class="bib-item">
                         <img class="icon" src="img/icons/doc.png"/>
