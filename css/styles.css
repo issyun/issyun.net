@@ -74,11 +74,24 @@ h1 em {
 }
 
 h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "FantasqueSansBold";
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
     color: #FFFDDD;
     background-color: rgb(31, 128, 137);
-    padding: 0.8rem;
+    padding: 1.2rem;
+}
+
+h2 p {
+    margin: 0;
+}
+
+h2 a:any-link {
+    color: #FFFDDD;
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -134,6 +147,16 @@ hr {
     margin: 0 auto;
 }
 
+ul {
+    margin-bottom: 2rem;
+}
+
+ul li {
+    margin-left: 2rem;
+    margin-bottom: 0.6rem;
+    list-style-type: square;
+}
+
 nav {
     background-color: rgba(255, 255, 255, 0.9);
     border: 0.4rem dotted rgb(83, 140, 143);
@@ -146,6 +169,7 @@ nav li {
     align-items: center;
     padding: 0.7rem;
     margin-bottom: 0.2rem;
+    margin-left: 0;
 }
 
 a li:hover {
@@ -208,7 +232,7 @@ a li:hover {
 #catch {
     font-family: "FantasqueSansItalic";
     text-align: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 #contacts {
@@ -216,10 +240,17 @@ a li:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.7rem;
+    margin-bottom: 0;
 }
 
 #contacts li {
     padding: 0.7rem;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.block {
+    display: block;
 }
 
 .text-center {
@@ -265,6 +296,58 @@ button:hover {
 
 button:active {
     background-color: rgb(170, 191, 189);
+}
+
+#music {
+    background-color: rgb(31, 128, 137);
+    border-color: rgb(143, 205, 209);
+    color: #FFFDDD;
+    position: relative;
+}
+
+#music h2 {
+    background-color: #FFFDDD;
+    color: rgb(31, 128, 137);
+}
+
+#music h2 a {
+    color: rgb(31, 128, 137);
+}
+
+#music > div {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+#music img {
+    width: 100%;
+    max-width: 30rem;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+#music > div > div {
+    z-index: 2;
+}
+
+#music a {
+    color: #FFFDDD;
+}
+
+#bandcamp-embed {
+    flex: 1 0 30rem;
+    position: relative;
+    top: 0;
+    border: 0;
+    width: 100%;
+    max-width: 32rem;
+    min-height: 50rem;
+    max-height: 75rem;
+    z-index: 2;
 }
 
 #footer {
@@ -383,6 +466,15 @@ button:active {
     .content {
         border-width: 0.3rem;
         padding: 1rem;
+    }
+
+    #music > div {
+        display: block;
+    }
+
+    #bandcamp-embed {
+        max-width: 50rem;
+        margin: 0 auto;
     }
 }
 
