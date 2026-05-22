@@ -164,6 +164,10 @@ nav {
     margin-bottom: 2rem;
 }
 
+nav ul {
+    margin-bottom: 0;
+}
+
 nav li {
     display: flex;
     align-items: center;
@@ -189,6 +193,12 @@ a li:hover {
     border: 0.4rem dotted rgb(83, 140, 143);
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .bib-item {
@@ -393,6 +403,14 @@ button:active {
         margin-bottom: 1.2rem;
     }
 
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h2 p {
+        font-size: 1.8rem;
+    }
+
     #pfp {
         width: 100%;
         object-fit: cover;
@@ -461,6 +479,10 @@ button:active {
     .links-wrapper {
         display: block;
         margin-bottom: 1.5rem;
+    }
+
+    .two-col {
+        gap: 1rem;
     }
 
     .content {
